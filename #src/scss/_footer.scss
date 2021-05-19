@@ -1,0 +1,100 @@
+.footer {
+    background-color: #e8eff4;
+
+    &__container {
+        display: flex;
+        padding: 35px 35px 20px 35px;
+        
+    @media (max-width: 780px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    }
+}
+
+.newsletter {
+    max-width: 300px;
+    margin-right: 20px;
+    @media (max-width: 577px) {
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        font-size: 20px;
+        color: rgb(58, 59, 63);
+        line-height: 1;
+        border-bottom: 1px solid #c0c4c6;
+    }
+    &__label {
+        font-size: 12px;
+        color: rgb(152, 152, 154);
+        line-height: 1;
+        padding-bottom: 12px;
+    }
+
+    &__input {
+        width: 245px;
+    }
+
+    &__btn {
+        width: 40px;
+    }
+
+    &__link {
+        font-size: 12px;
+        color: rgb(152, 152, 154);
+        line-height: 1;
+        padding-top: 15px;
+        position: relative;
+        top:25px;
+    }
+}
+
+.footer-list {
+    max-width: 190px;
+
+    &__title {
+        font-size: 20px;
+        color: rgb(58, 59, 63);
+        line-height: 1;
+        border-bottom: 1px solid #c0c4c6;
+        padding-right: 35px;
+    }
+}
+
+
+.footer-list:not(:last-child) {
+    margin-right: 15px;
+    @media (max-width: 500px) {
+        margin-right: 0;
+    }
+}
+
+.list-footer {
+    padding-left: 0;
+
+    &__link {
+        color: rgb(58, 105, 136);
+        line-height: 1.45;
+        font-size: 12px;
+    }
+}
+
+.copy-footer {
+    background-color: #2c4e65;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    @media (max-width: 580px) {
+        display: block;
+        text-align: center;
+    }
+     &__info {
+        padding: 20px 35px;
+    }
+
+    &__create {
+        padding: 20px 35px;
+    }
+}

@@ -1,0 +1,134 @@
+.header {
+  max-width: $maxWidthContainer;
+  
+    &__container {
+        display: flex;
+        max-width: $maxWidthContainer;
+        justify-content: space-between;
+        margin-bottom: 5px;
+
+        @media (max-width: 600px) {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        font-size: 32px;
+        color: $main-color;
+        line-height: 1;
+    }
+
+    &__subtitle {
+        color: rgb(76, 76, 76);
+        font-size: 16px;
+        line-height: 1;
+        position: relative;
+        top:-13px;
+    }
+
+    &__text {
+        font-size: 12px;
+        color: $main-color;
+        line-height: 1;
+        padding-bottom: 5px;
+        padding-left: 30px;
+        @media (max-width: 600px) {
+          padding-left: 0;
+      }      
+    }
+
+    &__phone,
+    &__mail {
+        font-size: 12px;
+        line-height: 1.2;
+        color: $main-color;
+        padding-right: 17px;
+    }
+
+    &__mail {
+      position: relative;
+      right: 15px;
+    }
+
+    &__right {
+        margin-top: 34px;
+        margin-right: 11px;
+        @media (max-width: 600px) {
+          margin: 0;
+      }
+    }
+
+    &__input {
+      width: 215px;
+      padding: 7px;
+      font-size: 12px;
+    }
+
+    &__btn {
+      padding: 7px;
+      width: 70px;
+      font-size: 12px;
+      color: $main-color;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    &__btn:hover {
+      background-color: black;
+      color: white;
+    }
+
+}
+
+.navbar {
+  background-color: $general-color;
+  padding: 0 45px 0 0;
+}
+
+
+.navbar ul li.active a {
+    text-decoration: none;
+    background-color: #f5f5f5;
+    color: $general-color;
+    
+}
+
+
+
+.navbar ul li a:hover {
+  text-decoration: none;
+  background-color: #f5f5f5;
+  color: $general-color;
+  
+}
+.navbar ul li a {
+    display: block;
+    padding: 0px 20px 0px 20px;
+    font-size: 16px;
+    line-height: 45px;
+    font-weight: 400;
+    color: white;
+    
+}
+
+.navbar ul .dropdown a {
+  background-color: $general-color;
+}
+
+
+
+.navbar-collapse {
+  z-index: 2;
+  background-color: $general-color;
+  text-align: center;
+}
+
+.nav-item:not(:last-child) {
+  padding-right: 40px;
+}
+
+.navbar ul li a:focus {
+color: aqua;
+}
+  

@@ -1,0 +1,40 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+    @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+    }
+    }
+
+@import "fonts";
+@import "./normalise";
+@import "./mixins.scss";
+@import "./_variables.scss";
+
+
+@import "./header";
+@import "./content";
+@import "./post";
+@import "./footer";
+
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "roboto-regular";
+}
+
+
+
+li {
+    list-style: none;
+  }
+  
+a {
+    text-decoration: none;
+    color: black;
+  }
+
